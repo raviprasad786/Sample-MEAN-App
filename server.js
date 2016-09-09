@@ -15,7 +15,6 @@ var db;
 
 // Connect to the database before starting the application server. 
 mongodb.MongoClient.connect('mongodb://localhost:27017/phonedb', function (err, database) {
-//mongodb.MongoClient.connect("mongodb://localhost:27017/db_mongo", function (err, database) {
   if (err) {
     console.log(err);
     process.exit(1);
@@ -26,7 +25,7 @@ mongodb.MongoClient.connect('mongodb://localhost:27017/phonedb', function (err, 
   console.log("Database connection ready");
 
   // Initialize the app.
-  var server = app.listen(process.env.PORT || 3001, function () {
+  var server = app.listen(process.env.PORT || 3000, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
   });
