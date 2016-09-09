@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 var db;
 
 // Connect to the database before starting the application server. 
-mongodb.MongoClient.connect('mongodb://raviprasad:vgs123@ds147975.mlab.com:47975/dbcloud', function (err, database) {
+mongodb.MongoClient.connect('mongodb://localhost:27017/phonedb', function (err, database) {
 //mongodb.MongoClient.connect("mongodb://localhost:27017/db_mongo", function (err, database) {
   if (err) {
     console.log(err);
