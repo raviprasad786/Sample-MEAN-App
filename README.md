@@ -9,4 +9,4 @@ $npm install
 
 $node server.js
 
-visit  http://localhost:3000/  to see the output
+open the url  http://localhost:3000/  to see the output
